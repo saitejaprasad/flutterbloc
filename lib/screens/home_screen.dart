@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
+// import 'package:flutter/src/widgets/framework.dart';
+// import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutterbloc/utils/app_styles.dart';
-import 'ticket_view.dart';
+import 'package:flutterbloc/screens/ticket_view.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -29,7 +29,7 @@ class HomeScreen extends StatelessWidget {
                         ),
                         SizedBox(height: 5,),
                         Text(
-                          "book tickets"
+                          "book tickets", style: TextStyle(fontSize: 55),
                         ),
 
                     ],
@@ -84,7 +84,7 @@ class HomeScreen extends StatelessWidget {
               ),
           ),
           // const Spacer(),
-          SizedBox(height: 2,),
+          SizedBox(height: 15,),
           TicketView(),
         ],
       ),

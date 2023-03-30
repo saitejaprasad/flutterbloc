@@ -5,7 +5,7 @@ class styles {
   static Color primaryColor = primary;
   static Color TextColor = const Color(0xFF3d3d3d);
   static Color bgColor = const Color(0xFFeeedf2);
-  static Color orangeColor = const Color(0xFF526799);
+  static Color orangeColor = const Color(0xFFF37B67);
   static TextStyle textStyle = TextStyle(fontSize: 16, color: TextColor, fontWeight: FontWeight.w500);
     static TextStyle headLineStyle1 = TextStyle(fontSize: 26, color: TextColor, fontWeight: FontWeight.bold);
         static TextStyle headLineStyle2 = TextStyle(fontSize: 21, color: TextColor, fontWeight: FontWeight.w500);
