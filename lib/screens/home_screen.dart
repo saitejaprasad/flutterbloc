@@ -93,6 +93,8 @@ class HomeScreen extends StatelessWidget {
             child: Row(children: [
               TicketView(),
               TicketView(),
+              TicketView(),
+              TicketView(),
 
             ]),
 
