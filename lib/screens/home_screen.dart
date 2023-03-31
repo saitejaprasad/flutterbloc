@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:flutterbloc/screens/hotel_screen.dart';
 // import 'package:flutter/src/widgets/framework.dart';
 // import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:flutterbloc/utils/app_styles.dart';
 import 'package:flutterbloc/screens/ticket_view.dart';
+import 'package:flutterbloc/screens/hotel_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -85,7 +87,36 @@ class HomeScreen extends StatelessWidget {
           ),
           // const Spacer(),
           SizedBox(height: 15,),
-          TicketView(),
+          SingleChildScrollView(
+            scrollDirection: Axis.horizontal,
+            padding: const EdgeInsets.only(left: 20),
+            child: Row(children: [
+              TicketView(),
+              TicketView(),
+
+            ]),
+
+          ),
+          SizedBox(height: 5,),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text("Hotels", style: styles.headLineStyle2),
+                    InkWell(
+                      onTap: () {
+                        print("you are tapped");
+                      },
+                      child: Text("View all", style: styles.textStyle.copyWith(color: styles.primaryColor),)),
+                    ],
+                    
+                  ),
+          ),
+          const SizedBox(height: 10,),
+          HotelScreen(),
+
+          
         ],
       ),
     );

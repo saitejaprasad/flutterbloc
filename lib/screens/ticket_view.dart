@@ -12,18 +12,15 @@ class TicketView extends StatelessWidget {
   Widget build(BuildContext context) {
     final size = AppLayout.getsize(context);
     return SizedBox(
-      width: size.width,
+      width: size.width*0.85,
       height: 250,
       child: Container(
-        margin: const EdgeInsets.only(left: 16),
+        margin: const EdgeInsets.only(right: 16),
         child: Column(
           children: [
-
-
             /* 
             showing the blue part of the ticket
             */
-
             Container(
               decoration: const BoxDecoration(
                 color:  Color(0xff526799),
@@ -93,14 +90,15 @@ class TicketView extends StatelessWidget {
               ),
             ),
 
-
-
             /* 
             showing the orange part of the ticket
             */
             Container(
-              color: const Color(0xFFF37B67),
+              color: Color(0xFFF37B67),
+              // height: 25,
+              
               child: Row(
+              
                 children: [
                 const SizedBox(
                   height: 20,
@@ -123,7 +121,7 @@ class TicketView extends StatelessWidget {
                         direction: Axis.horizontal,
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         mainAxisSize: MainAxisSize.max,
-                        children:  List.generate((constraints.constrainWidth()/15).floor(), (index) => SizedBox(
+                        children:  List.generate((constraints.constrainWidth()/15).floor(), (index) => const SizedBox(
                           width: 5, height: 1,
                           child:  DecoratedBox(
                             decoration: BoxDecoration(
